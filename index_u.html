@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="page_priv" content="0">
+    <meta name="is_horizontal_menu" content="0">
+    <link rel="shortcut icon" href="custom/ico.ico">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" media="print" onload="this.media = 'all'; this.onload = null">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="morris/morris.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="vendor/metisMenu/metisMenu.min.css"  rel="stylesheet">
+    <link href="vendor/metisMenu/mm-horizontal.css"  rel="stylesheet">
+    <link href="rangeSlider/ion.rangeSlider.min.css"  rel="stylesheet">
+    <link href="custom/custom.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="js/Sidebar_init.js"></script>
+    <script src="morris/raphael-min.js"></script>
+    <script src="morris/morris.min.js"></script>
+    <script src="js/language_support.js"></script>
+    <script id="language_support_adaptive"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="rangeSlider/ion.rangeSlider.min.js"></script>
+    <script src="js/Auto_Page_generate.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/global_control.js"></script>
+    <style>
+        @media only screen and (max-width: 550px) {
+            .sidebar_style {
+                position: fixed;
+                left: 0;
+                z-index: 9;
+                box-shadow: 2px -1px 11px 2px rgb(0 0 0 / 48%);
+            }
+        }
+
+        .sidebar_style {
+            -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+        }
+
+        .sidebar_init {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion sidebar_style animated fadeInLeft sidebar_init" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index_u.html">
+                <div class="sidebar-brand-icon">
+                    <img src="custom/logo.png" class="" style="max-height: 70px;max-width:100%;margin:auto;display: flex;justify-content: center;">
+                </div>
+            </a>
+        </ul>
+        <div id="content-wrapper" class="d-flex flex-column" style="min-height: 100vh;">
+            <div id="content">
+                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <form action="/boaform/admin/formLogout" style="display: none;" method="POST" name="top" target="_top" id="Logout_form"></form>
+                <button id="Logout_button" class="btn btn-link " style="z-index:9;position:absolute;right:0;">
+                    <span class="fa fa-times-circle">&nbsp;<span class="lang" key="LANG_LOGOUT"></span></span>
+                </button>
+                <div class="container-fluid animated" style="padding-top:38px;" id="container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="waiting_animation" class="modal-backdrop in" style="display:none;">
+        <div class="aboslute_center">
+            <div class="sk-spinner sk-spinner-cube-grid">
+                <div class="sk-cube"></div>
+                <div class="sk-cube"></div>
+                <div class="sk-cube"></div>
+                <div class="sk-cube"></div>
+                <div class="sk-cube"></div>
+                <div class="sk-cube"></div>
+                <div class="sk-cube"></div>
+                <div class="sk-cube"></div>
+                <div class="sk-cube"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
